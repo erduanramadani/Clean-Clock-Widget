@@ -3,7 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="it.sephiroth.apps.widget.cleanclock" 
 	android:versionCode="1"
-	android:versionName="1.0.4">
+	android:versionName="1.0.5">
 	
 	<application 
 		android:icon="@drawable/icon" 
@@ -11,7 +11,7 @@
 		android:debuggable="false">
 		
 		<!-- Clock 4x2 -->
-		<activity android:name=".CleanClockWidgetConfigure">
+		<activity android:name=".CleanClockWidgetConfigure" android:theme="@android:style/Theme.Black" android:label="@string/configure_label">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
 			</intent-filter>
@@ -24,7 +24,7 @@
 		</service>
 		
 		<!-- Clock 4x1 -->
-		<activity android:name=".CleanClockWidgetConfigure41">
+		<activity android:name=".CleanClockWidgetConfigure41" android:theme="@android:style/Theme.Black" android:label="@string/configure_label">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
 			</intent-filter>

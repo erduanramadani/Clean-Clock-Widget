@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical">
+	
 	<CheckBox
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:id="@+id/checkbox_24"
 		android:text="Use 24h format" />
 		
+	<LinearLayout
+		android:layout_below="@id/checkbox_24"
+		android:id="@+id/hline_01"
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:background="@android:color/background_light"
+	/>
+		
 	<CheckBox
+		android:layout_below="@id/hline_01"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:id="@+id/checkbox_shadow"
 		android:text="Drop Shadow" />		
 		
 	<LinearLayout
+		android:layout_alignParentBottom="true"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center">
@@ -26,4 +39,4 @@
 			android:layout_height="wrap_content"
 			android:text="Save" />
 	</LinearLayout>
-</LinearLayout>
+</RelativeLayout>

@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World!</string>
     <string name="app_name">CleanClock</string>
+    <string name="configure_label">CleanClock Widget Configuration</string>
 </resources>

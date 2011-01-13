@@ -29,7 +29,7 @@
 		android:gravity="right"
 		android:layout_below="@id/text_hours"
 		android:layout_alignRight="@id/text_hours"
-		android:layout_marginTop="-24dp"
+		android:layout_marginTop="-16dp"
 		android:text="AM"
 		android:textColor="@android:color/white" />
 
